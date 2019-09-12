@@ -1,0 +1,26 @@
+{
+  "name": "proyecto-metamaticas",
+  "version": "1.0.0",
+  "description": "Proyecto para aprender el uso de NODJS\u001b[D\u001b[DE\u001b[C\u001b[C y NPM practicando Matematicas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gelcorejs/proyecto-metamaticas.git"
+  },
+  "keywords": [
+    "Matematica",
+    "Suma",
+    "Resta",
+    "Divicion",
+    "NOdejs"
+  ],
+  "author": "gelcorejs",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gelcorejs/proyecto-metamaticas/issues"
+  },
+  "homepage": "https://github.com/gelcorejs/proyecto-metamaticas#readme"
+}
