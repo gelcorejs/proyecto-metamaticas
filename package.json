@@ -1,6 +1,6 @@
 {
   "name": "proyecto-metamaticas",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Proyecto para aprender el uso de NODJS\u001b[D\u001b[DE\u001b[C\u001b[C y NPM practicando Matematicas",
   "main": "index.js",
   "scripts": {
