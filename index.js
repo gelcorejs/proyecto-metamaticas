@@ -7,7 +7,7 @@ module.exports = {
      * @param {*} n2 numero dos de la suma
      */
     suma: function(n1,n2){
-        return n1+n2;
+        return (this.isNumber(n1,n2)?n1+n2:this.errorMsg());
     },
     /**
      * Metodo que Multiplica dos Numero
@@ -17,7 +17,7 @@ module.exports = {
      * @param {*} n2 numero dos de la multi
      */
     multiplicacion: function(n1,n2){
-        return n1*n2;
+        return (this.isNumber(n1,n2)?n1*n2:this.errorMsg());
     },
         /**
      * Metodo que divide dos Numero
@@ -26,8 +26,8 @@ module.exports = {
      * @param {*} n1 numero uno de la divide 
      * @param {*} n2 numero dos de la divide
      */
-    division: function(){
-        return n1/n2;
+    division: function(n1,n2){
+        return (this.isNumber(n1,n2)?n1/n2:this.errorMsg());
     },
         /**
      * Metodo que resta dos Numero
@@ -36,7 +36,25 @@ module.exports = {
      * @param {*} n1 numero uno de la resta 
      * @param {*} n2 numero dos de la resta
      */
-    resta: function(){
-        return n1-n2;
+    resta: function(n1,n2){
+        return (this.isNumber(n1,n2)?n1-n2:this.errorMsg());
+    },
+    errorMsg: function(){
+        console.log("Por favor Introdusca Valores Numericos");
+        return;
+    },
+         /**
+     * Metodo que comprueba que los parametros sean  Numericos
+     * 
+     * @param {*} n1 
+     * @param {*} n2 
+     */
+    isNumber:function(n1,n2){
+        if(typeof n1 !== 'number' || typeof n2 !== 'number'){
+            return false;
+        }else{
+            return true;
+        }
     }
+
 }
